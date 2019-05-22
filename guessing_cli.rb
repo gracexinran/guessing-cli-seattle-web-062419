@@ -2,12 +2,12 @@
 def run_guessing_game
   random = rand(100)
   input = gets.chomp 
-  until input.to_i == random 
+  if input.to_i != random 
     puts "The computer guessed #{random}."
-    input = gets.chomp 
-    if input == "exit"
-      return "exit" 
-    end 
+  
+  elsif input == "exit"
+      break
+  elsif input.to_i == random
+    puts "You guessed the correct number!"
   end
-  puts "You guessed the correct number!"
 end 
