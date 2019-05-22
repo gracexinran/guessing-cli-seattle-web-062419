@@ -17,3 +17,8 @@ def run_guessing_game
   
   puts "Goodbye!"
 end 
+
+def input 
+  puts "Guess a number between 1 and 6." 
+  input = gets.chomp
+end 
