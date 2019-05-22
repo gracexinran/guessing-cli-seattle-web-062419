@@ -7,10 +7,10 @@ def run_guessing_game
     
     if input.to_i != random 
       puts "The computer guessed #{random}."
- 
+      input = gets.chomp
     else
       puts "You guessed the correct number!"
-     
+      break
     end
   end
   puts "Goodbye!"
