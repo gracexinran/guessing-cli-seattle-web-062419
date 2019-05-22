@@ -11,5 +11,3 @@ def run_guessing_game
     puts "You guessed the correct number!"
   end
 end 
-
-def user_input
