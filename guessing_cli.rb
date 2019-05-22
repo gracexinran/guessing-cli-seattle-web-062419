@@ -1,6 +1,6 @@
 # Code your solution here!
 def run_guessing_game
-  random = rand(100)
+  random = rand(1..6)
   input = gets.chomp 
   if input.to_i != random 
     puts "The computer guessed #{random}."
