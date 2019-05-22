@@ -6,6 +6,7 @@ def run_guessing_game
   
   if input.to_i != random 
       puts "The computer guessed #{random}."
+      
   else 
       puts "You guessed the correct number!"
   end
